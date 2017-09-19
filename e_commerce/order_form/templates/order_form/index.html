@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Store!</h1>
+    <form action="order" method="post">
+        {% csrf_token %}
+        <p>T-shirt, $19.99</p>
+        <select name="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <input type="hidden" name="product_id" value="1">
+        <input type="submit" value="Buy!">
+    </form>
+    <form action="order" method="post">
+        {% csrf_token %}
+        <p>Sweater, $9.99</p>
+        <select name="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <input type="hidden" name="product_id" value="2">
+        <input type="submit" value="Buy!">
+    </form>
+    <form action="order" method="post">
+        {% csrf_token %}
+        <p>Cup, $4.99</p>
+        <select name="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <input type="hidden" name="product_id" value="3">
+        <input type="submit" value="Buy!">
+    </form>
+    <form action="order" method="post">
+        {% csrf_token %}
+        <p>Book, $49.99</p>
+        <select name="number">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+        </select>
+        <input type="hidden" name="product_id" value="4">
+        <input type="submit" value="Buy!">
+    </form>
+</body>
+</html>
